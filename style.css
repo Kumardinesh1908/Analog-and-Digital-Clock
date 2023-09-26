@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+
+body,html{
+    margin : 0;
+    padding: 0;
+    background: #44d5fc;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    background : white;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: inset 0px 0px 2px 1px #0000001f, 0px 0px 2px 2px #00000026;
+    background-image:url('clock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.clock::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    z-index: 4;
+}
+
+#second,#minute,#hour{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#second{
+    z-index: 3;
+}
+#minute{
+    z-index: 2;
+}
+#hour{
+    z-index: 1;
+}
+
+#second::before,#minute::before,#hour::before,#second::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    border-radius: 10%;
+}
+
+#second::before{
+    width: 1px;
+    height: 120px;
+    background: red;
+}
+
+#second::after{
+    width: 1px;
+    height: 30px;
+    background-color: red;
+    transform: translate(-50%,0);
+}
+
+#minute::before{
+    width: 2px;
+    height: 100px;
+    background: gray;
+}
+
+#hour::before{
+    width: 4px;
+    height: 70px;
+    background: black;
+}
+
+#digitalClock{
+    width: 85px;
+    height: 20px;
+    background-color: beige;
+    position: absolute;
+    top: 46.4%;
+    left: 56%;
+    font-family: 'Courier Prime', monospace; 
+    padding: 4px 0px 0px 4px;
+    font-weight: lighter;
+    border-radius: 10%;
+}
