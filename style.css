@@ -1,27 +1,31 @@
+/* Import the 'Courier Prime' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
 
-body,html{
-    margin : 0;
+/* Reset margin and padding for the entire page and set background color */
+body, html {
+    margin: 0;
     padding: 0;
     background: #44d5fc;
 }
 
-.clock{
+/* Styling for the clock container */
+.clock {
     width: 300px;
     height: 300px;
-    background : white;
+    background: white;
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 50%;
     border: 20px solid white;
     box-shadow: inset 0px 0px 2px 1px #0000001f, 0px 0px 2px 2px #00000026;
-    background-image:url('clock.png');
+    background-image: url('clock.png'); /* Set background image */
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
 }
 
-.clock::after{
+/* Style the center dot of the clock */
+.clock::after {
     content: "";
     display: block;
     width: 8px;
@@ -36,65 +40,77 @@ body,html{
     z-index: 4;
 }
 
-#second,#minute,#hour{
+/* Styling for clock hands (second, minute, and hour) */
+#second, #minute, #hour {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#second{
+/* Style the second hand and set its z-index */
+#second {
     z-index: 3;
 }
-#minute{
+
+/* Style the minute hand and set its z-index */
+#minute {
     z-index: 2;
 }
-#hour{
+
+/* Style the hour hand and set its z-index */
+#hour {
     z-index: 1;
 }
 
-#second::before,#minute::before,#hour::before,#second::after{
+/* Styling for clock hand elements (before and after pseudo-elements) */
+#second::before, #minute::before, #hour::before, #second::after {
     content: "";
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%, -100%);
     border-radius: 10%;
 }
 
-#second::before{
+/* Style the second hand's before pseudo-element */
+#second::before {
     width: 1px;
     height: 120px;
     background: red;
 }
 
-#second::after{
+/* Style the second hand's after pseudo-element */
+#second::after {
     width: 1px;
     height: 30px;
     background-color: red;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-#minute::before{
+/* Style the minute hand's before pseudo-element */
+#minute::before {
     width: 2px;
     height: 100px;
     background: gray;
 }
 
-#hour::before{
+/* Style the hour hand's before pseudo-element */
+#hour::before {
     width: 4px;
     height: 70px;
     background: black;
 }
 
-#digitalClock{
+/* Styling for the digital clock display */
+#digitalClock {
     width: 85px;
     height: 20px;
     background-color: beige;
     position: absolute;
     top: 46.4%;
     left: 56%;
-    font-family: 'Courier Prime', monospace; 
+    font-family: 'Courier Prime', monospace; /* Apply the 'Courier Prime' font */
     padding: 4px 0px 0px 4px;
     font-weight: lighter;
     border-radius: 10%;
