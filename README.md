@@ -1,4 +1,4 @@
-# Analog-and-Digital-Clock 
+# Analog-and-Digital-Clock :clock10:
 This is a simple web application that displays both an analog and digital clock on a web page. It's built using HTML, CSS, and JavaScript.
 
 <img src="/Clock homaePage.png">
