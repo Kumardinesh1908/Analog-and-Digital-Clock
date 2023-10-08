@@ -6,9 +6,9 @@ This is a simple web application that displays both an analog and digital clock 
 
 ## Features:fire:
 
-:tv: 1.Displays both analog and digital clocks.<br>
-:tv: 2.The analog clock hands move in real-time to show the current time.<br>
-:tv: 3.The digital clock updates in real-time to display the current time in 12-hour format.<br>
+:tv:  Displays both analog and digital clocks.<br>
+:tv:  The analog clock hands move in real-time to show the current time.<br>
+:tv:  The digital clock updates in real-time to display the current time in 12-hour format.<br>
   
 ## Tech Stack :computer:
 :clapper: **HTML** <br>
@@ -19,11 +19,13 @@ This is a simple web application that displays both an analog and digital clock 
 :zap: Simply open to view the analog and digital clocks. The analog clock's hands will move in real-time to display the current time, and the digital clock will update accordingly.<br>
 
 ## Installation :notebook:
-To install the Todo List app, use git:
+To install the Analog and Digital Clone app, use git:
 ```
 git clone https://github.com/Kumardinesh1908/Analog-and-Digital-Clock.git
 ```
 To deploy this project, simply open the index.html file in your browser.
 
 ## Live Demo
-Check out the live demo of the ToDo List App: https://kumardinesh1908.github.io/Analog-and-Digital-Clock/
+```
+https://kumardinesh1908.github.io/Analog-and-Digital-Clock/
+```
