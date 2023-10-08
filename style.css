@@ -117,19 +117,22 @@ body, html {
 }
 
 /* Media query for mobile devices with a maximum width of 600 pixels */
-@media only screen and (max-width: 740px) {
+/* @media only screen and (max-width: 740px) {
 
     .clock {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         margin-top: 20px;
     }
 
     #digitalClock {
-        width: 60px;
+        width: 50px;
         height: 15px;
         top: 40%;
         left: 50%;
         padding: 2px;
+        font-size:11px;
+        top:46%;
+        left: 56%;
     }
-}
+} */
