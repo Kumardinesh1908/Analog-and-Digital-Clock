@@ -27,5 +27,5 @@ To deploy this project, simply open the index.html file in your browser.
 
 ## Live Demo
 ```
-https://kumardinesh1908.github.io/Analog-and-Digital-Clock/
+https://clock-kumardinesh1908.vercel.app/
 ```
